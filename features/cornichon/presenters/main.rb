@@ -1,18 +1,17 @@
+require "yaml"
+
 def person
   people.sample
 end
 
 def people
-  men.map { |m|
-    {
-      'nationality' => m,
-      'profession' => profession_for(m)
-    }
-  }
+  @people ||= YAML.load_file("#{__dir__}/../../test_config/people.yaml")
 end
 
 def men
-  ["Englishman", "Irishman", "Scotsman", "Welshman"]
+  people.map { |person|  
+    person['nationality']
+  }
 end
 
 def man

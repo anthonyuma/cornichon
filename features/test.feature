@@ -6,7 +6,7 @@ Scenario: a man walks into a pub
   Then he says he is a Town drunk
 
 Scenario: a man walks into a pub
-  Given a Scotsman walks into a bar
+  Given a Englishman walks into a bar
   When the barman asks his profession
   Then he says he is a weaver
   
@@ -17,6 +17,6 @@ Scenario Outline: making a table
   Examples:
   | nationality | profession    |
   | Englishman  | Beefeater     |
-  | Irishman    | Town drunk    |
   | Scotsman    | Heroin dealer |
+  | Irishman    | Town drunk    |
   | Welshman    | Sheep shagger |
