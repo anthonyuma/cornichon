@@ -2,7 +2,7 @@
 
 A cornichon is a fancy gherkin ([WIKI](https://en.wikipedia.org/wiki/Pickled_cucumber#Cornichon))
 
-Cornichon allows you to write pseudo-Gherkin features that will transpile to valid Gherkin. In the process, you can programatically insert content into those features before running your cucumber tests. Now, your can write your acceptance tests to be more configurable, flexible, reusable, dynamic and greatly increase your test coverage!
+Cornichon allows you to write pseudo-Gherkin features that will transpile to valid Gherkin. In the process, you can programatically insert content into those features before running your cucumber tests. Now, you can write your acceptance tests to be more configurable, flexible, reusable, dynamic and greatly increase your test coverage!
 
 ## Installation
 
@@ -62,7 +62,7 @@ Now run your cucumber tests!
 
 ## Usage
 
-## Simple values
+### Simple values
 
 use `{{double braces}}` to insert a method value
 
