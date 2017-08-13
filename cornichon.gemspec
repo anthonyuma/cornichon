@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Cornichon::VERSION
   spec.authors       = ["thomgray"]
   spec.email         = ["thomdikdave@hotmail.com"]
+  spec.executables   << 'cornichon'
 
   spec.summary       = "A fancy gherkin"
   spec.description   = "A gherkin transpiler that allows you to write cucumber (gherkin) features programatically, thereby greatly improving your test coverage!"
@@ -26,8 +27,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.15"
