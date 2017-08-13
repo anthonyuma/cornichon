@@ -10,19 +10,10 @@ Gem::Specification.new do |spec|
   spec.email         = ["thomdikdave@hotmail.com"]
   spec.executables   << 'cornichon'
 
-  spec.summary       = "A fancy gherkin"
-  spec.description   = "A gherkin transpiler that allows you to write cucumber (gherkin) features programatically, thereby greatly improving your test coverage!"
+  spec.summary       = %q{A fancy gherkin}
+  spec.description   = %q{A gherkin transpiler that allows you to write cucumber (gherkin) features programatically, thereby greatly improving your test coverage!}
   spec.homepage      = "https://github.com/thomgray/cornichon"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
