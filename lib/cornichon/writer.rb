@@ -12,7 +12,8 @@ module Cornichon
         templates.each { |template|
           template_name = File.basename(template, ".cornichon")
           feature_path = File.join(Dir.pwd, Config.relative_feature_path, "#{template_name}.feature")
-          write_template(template)
+          raw_feature = parse_template(template)
+          IO.write(feature_path, raw_feature)
         }
       end
 
@@ -23,9 +24,9 @@ module Cornichon
         }.call
       end
 
-      def write_template(template_file)
+      def parse_template(template_file)
         raw_template = IO.read(template_file)
-        puts raw_template
+        Parser.parse(raw_template)
       end
 
       private
@@ -38,7 +39,8 @@ module Cornichon
       end
 
       def create_feature_dir
-        FileUtils.mkdir_p File.join(Dir.pwd, Config.relative_feature_path)
+        dir_path = File.join(Dir.pwd, Config.relative_feature_path)
+        FileUtils.mkdir_p dir_path unless Dir.exist? dir_path
       end
     end
   end

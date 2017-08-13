@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'cornichon/writer'
+Cornichon::Writer.write!

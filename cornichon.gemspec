@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["thomgray"]
   spec.email         = ["thomdikdave@hotmail.com"]
 
-  spec.summary       = "A fancy cucumber"
+  spec.summary       = "A fancy gherkin"
   spec.description   = "A gherkin transpiler that allows you to write cucumber (gherkin) features programatically, thereby greatly improving your test coverage!"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/thomgray/cornichon"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
